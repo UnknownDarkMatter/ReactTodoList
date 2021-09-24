@@ -8,6 +8,17 @@ const todoList = (state = defaultTodoList, action) => {
 			return state;
 		}
 		case ADD_TODO:{
+            //return {
+            //    ... post,
+            //    content: action.payload.content,
+            //}
+			//return {...state, adresse:action.payload};
+			//return [
+			//...state,
+			//	{
+			//  	name: action.bird
+			//	}
+			//];
 			return [...state, action.payload];
 		}
 		default:{
